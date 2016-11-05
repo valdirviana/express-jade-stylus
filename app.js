@@ -32,4 +32,10 @@ app.get('/', function (req, res) {
     )
 })
 
+app.get('/post', function (req, res) {
+    res.render('post',
+        { title: 'Nome do Post' }
+    )
+})
+
 app.listen(3000)
